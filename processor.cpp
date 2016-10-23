@@ -125,7 +125,7 @@ std::vector<cpptorch::Tensor<float>> Processor::processImage(const cv::Mat &fram
 		}
 		for (int i = 0; i < COUNT_OF(align_template); i++)
 		{
-			dlib::point pt = shape.part(idx);
+			dlib::point pt = shape.part(i);
 			std::cout << pt.x() << " " << pt.y() << " ";
 		}
 		std::cout << std::endl;
