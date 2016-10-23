@@ -19,3 +19,5 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=gnu++0x")
 add_executable(analyze_train_mov processor.cpp analyze_train_mov.cpp)
 target_link_libraries(analyze_train_mov ${OpenCV_LIBS} ${dlib_LIBRARIES} ${CPPTORCH_LIBRARIES})
 
+add_executable(analyze_train_image processor.cpp analyze_train_image.cpp)
+target_link_libraries(analyze_train_image ${OpenCV_LIBS} ${dlib_LIBRARIES} ${CPPTORCH_LIBRARIES})
